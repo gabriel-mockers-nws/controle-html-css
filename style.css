@@ -1,1 +1,24 @@
+/* TOKENS */
 
+:root {
+  /* colors */
+  --color-light-grey: #f5f7fa;
+  --color-dark-grey: #4d4d4d;
+  --color-white: #ffff;
+  --color-black: #263238;
+  --color-primary: #4caf4f;
+
+  /*fonts*/
+  --font-family-heading: "inter", sans-serif;
+  --font-family-base: "inter", sans-serif;
+
+  /* font size*/
+  --font-size-base: clamp(1rem, 0.875rem + 0.2273vw, 1.125rem);
+  --font-size-lg: clamp(1.8rem, 1.75rem + 0.6818vw, 2rem);
+  --font-size-xl: clamp(2.5rem, 2.25rem + 1.3182vw, 2.85rem);
+  --font-size-2xl: clamp(4.5rem, 4rem + 2.2727vw, 4.75rem);
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+}
