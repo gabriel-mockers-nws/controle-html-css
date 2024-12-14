@@ -8,11 +8,14 @@
   --color-black: #263238;
   --color-primary: #4caf4f;
 
-  /*fonts*/
+  /* Shadow */
+  --shadow-md: 0 2px 4px 0 #abbed1;
+
+  /* fonts */
   --font-family-heading: "inter", sans-serif;
   --font-family-base: "inter", sans-serif;
 
-  /* font size*/
+  /* font size */
   --font-size-base: clamp(1rem, 0.875rem + 0.2273vw, 1.125rem);
   --font-size-lg: clamp(1.8rem, 1.75rem + 0.6818vw, 2rem);
   --font-size-xl: clamp(2.5rem, 2.25rem + 1.3182vw, 2.85rem);
@@ -21,4 +24,27 @@
   /* Font weight */
   --font-weight-normal: 400;
   --font-weight-bold: 600;
+
+  /* Line Height */
+  --lineheight-main-heading: 4.75rem;
+  --lineheight-subtitle: 2.75rem;
+  --lineheight-article-title: 1.75rem;
+  --lineheight-base: 1.25rem;
+
+  /* Spacing */
+  --spacing-2xs: 0.25rem;
+  --spacing-xs: 0.625rem;
+  --spacing-md: 1rem;
+  --spaceing-l: 2rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 3.125rem;
+  --spacing-3xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+
+  /* Container */
+  --container-default: 920px;
+  --container-wide: 1380px;
 }
