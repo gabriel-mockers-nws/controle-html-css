@@ -17,10 +17,10 @@
   --font-family-base: "inter", sans-serif;
 
   /* font size */
-  --font-size-base: clamp(1rem, 0.875rem + 0.2273vw, 1.125rem);
-  --font-size-lg: clamp(1.8rem, 1.75rem + 0.6818vw, 2rem);
-  --font-size-xl: clamp(2.5rem, 2.25rem + 1.3182vw, 2.85rem);
-  --font-size-2xl: clamp(4.5rem, 4rem + 2.2727vw, 4.75rem);
+  --font-size-base: clamp(0.75rem, 0.875rem + 0.1vw, 1.125rem);
+  --font-size-lg: clamp(1.5rem, 1.75rem + 0.15vw, 2rem);
+  --font-size-xl: clamp(1.75rem, 2.25rem + 0.2vw, 2.75rem);
+  --font-size-2xl: clamp(3rem, 4rem + 0.25vw, 5rem);
 
   /* Font weight */
   --font-weight-normal: 400;
@@ -48,4 +48,69 @@
   /* Container */
   --container-default: 920px;
   --container-wide: 1380px;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+/* Supprimez toutes les animations et transitions pour les personnes qui préfèrent ne pas les voir */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* BASES */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-light-grey);
+  background-color: var(--color-white);
+}
+
+/* Heding */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-heading);
+  color: var(--color-dark-grey);
+  line-height: var(--line-height-heading);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+/* Paragraphe */
+p + p {
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-base);
 }
