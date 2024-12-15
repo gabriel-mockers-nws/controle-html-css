@@ -7,6 +7,7 @@
   --color-light-grey: #717171;
   --color-white: #ffff;
   --color-black: #263238;
+  --color-black-nav: #18191f;
   --color-primary: #4caf4f;
 
   /* Shadow */
@@ -72,7 +73,7 @@
   }
 }
 
-/* BASES */
+/** BASES */
 html,
 body {
   margin: 0;
@@ -101,6 +102,10 @@ h1 {
   font-size: var(--font-size-2xl);
 }
 
+h1 span {
+  color: var(--color-primary);
+}
+
 h2 {
   font-size: var(--font-size-xl);
 }
@@ -114,3 +119,32 @@ p + p {
   margin-top: var(--spacing-md);
   font-size: var(--font-size-base);
 }
+
+/* Links */
+a {
+  color: var(--color-black-nav);
+  text-underline-offset: 0.25rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+svg {
+  display: block;
+  fill: currentColor;
+}
+
+/* Navigation */
+nav a {
+  padding: var(--spacing-xs) var(--spacing-md);
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/** LAYOUT */
