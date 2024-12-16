@@ -143,8 +143,55 @@ nav a {
   padding: var(--spacing-xs) var(--spacing-md);
   text-decoration: none;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
 
+button {
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  border: 0;
+  line-height: 24px;
+  background-color: var(--color-primary);
+  padding: 14px 32px;
+}
+
 /** LAYOUT */
+.flow,
+.flow-reverse {
+  display: flex;
+  flex-direction: column;
+}
+
+.flow > *,
+.flow-reverse > * {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flow,
+  .flow-reverse {
+    flex-direction: row;
+    align-items: center;
+  }
+  .flow-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.login {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.login .sing-up {
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  border: 0;
+  line-height: 24px;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+}
