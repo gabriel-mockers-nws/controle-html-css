@@ -263,4 +263,5 @@ footer {
 
 .footer-copyright p {
   gap: 40px;
+  color: var(--color-silver);
 }
