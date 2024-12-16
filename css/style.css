@@ -148,6 +148,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* buttons */
 button {
   color: var(--color-white);
   border-radius: var(--radius-sm);
@@ -180,6 +181,8 @@ button {
     flex-direction: row-reverse;
   }
 }
+
+/* COMPOSANTS */
 
 .login {
   background-color: var(--color-white);
