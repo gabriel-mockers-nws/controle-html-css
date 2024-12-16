@@ -169,6 +169,8 @@ header {
   display: flex;
   gap: 145px;
   background-color: var(--color-silver);
+  justify-content: space-evenly;
+  padding: 22px 105px;
 }
 
 footer {
@@ -222,14 +224,13 @@ footer {
 /* COMPOSANTS */
 
 .logo {
-  padding-left: 145px;
+  padding-left: 105px;
   padding-top: 30px;
 }
 .header-nav {
-  display: flex;
-  text-align: center;
-  padding-left: 145px;
+  justify-self: center;
   padding-top: 30px;
+  gap: 50px;
 }
 
 .login {
@@ -248,10 +249,14 @@ footer {
   border-radius: var(--radius-logins);
   border: 0;
   line-height: 20px;
+  height: 40px;
+  width: 91px;
   background-color: var(--color-primary);
   background-color: var(--color-white);
   color: var(--color-primary);
-  padding-top: 22px;
+  gap: 14px;
+
+  text-align: center;
 }
 
 .card-title {
