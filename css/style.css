@@ -167,7 +167,8 @@ button {
 
 header {
   display: flex;
-  background-color: red;
+  gap: 145px;
+  background-color: var(--color-silver);
 }
 
 footer {
@@ -222,19 +223,23 @@ footer {
 
 .logo {
   padding-left: 145px;
+  padding-top: 30px;
 }
 .header-nav {
   display: flex;
   text-align: center;
   padding-left: 145px;
+  padding-top: 30px;
 }
 
 .login {
-  background-color: var(--color-white);
+  background-color: var(--color-silver);
   color: var(--color-primary);
+  padding: 10px 20px;
 }
 
 .sing-up {
+  padding: 10px 20px;
 }
 
 .logins {
@@ -244,9 +249,9 @@ footer {
   border: 0;
   line-height: 20px;
   background-color: var(--color-primary);
-  padding: 10px 20px;
   background-color: var(--color-white);
   color: var(--color-primary);
+  padding-top: 22px;
 }
 
 .card-title {
