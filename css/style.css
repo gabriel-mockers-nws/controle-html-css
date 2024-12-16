@@ -168,7 +168,6 @@ button {
 header {
   display: flex;
   background-color: red;
-  gap: 145px;
 }
 
 footer {
@@ -255,9 +254,13 @@ footer {
 }
 
 .footer-copyright {
+  display: flex;
   background-color: var(--color-black);
   justify-content: center;
   text-align: center;
   padding: 42px;
-  gap: 125px;
+}
+
+.footer-copyright p {
+  gap: 40px;
 }
