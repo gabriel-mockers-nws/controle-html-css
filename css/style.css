@@ -25,7 +25,9 @@
 
   /* Font weight */
   --font-weight-normal: 400;
+  --font-weight-button: 500;
   --font-weight-bold: 600;
+  --font-weight-card: 700;
 
   /* Line Height */
   --lineheight-main-heading: 4.75rem;
@@ -44,7 +46,9 @@
   --spacing-3xl: 4rem;
 
   /* Radius */
-  --radius-sm: 0.375rem;
+  --radius-login: 0.375rem;
+  --radius-base: 0.25rem;
+  --radius-card: 0.5rem;
 
   /* Container */
   --container-default: 920px;
@@ -139,6 +143,7 @@ svg {
 }
 
 /* Navigation */
+
 nav a {
   padding: var(--spacing-xs) var(--spacing-md);
   text-decoration: none;
@@ -151,15 +156,29 @@ nav a:hover {
 /* buttons */
 button {
   color: var(--color-white);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-base);
   text-align: center;
   border: 0;
   line-height: 24px;
   background-color: var(--color-primary);
   padding: 14px 32px;
+  font-weight: var(--font-weight-button);
+}
+
+header {
+  display: flex;
+  background-color: red;
+  gap: 145px;
+}
+
+footer {
+  margin-inline: auto;
+  background-color: blue;
 }
 
 /** LAYOUT */
+
+/* flow */
 .flow,
 .flow-reverse {
   display: flex;
@@ -182,19 +201,63 @@ button {
   }
 }
 
+/* Container */
+.container,
+.container-wide {
+  margin-inline: auto;
+}
+.container {
+  max-width: var(--container-default);
+}
+.container-wide {
+  max-width: var(--container-wide);
+}
+
+/* Sections */
+.section {
+  padding: clamp(var(--spacing-xl), 0.0795rem + 4.5455vw, var(--spacing-2xl))
+    var(--spacing-lg);
+}
+
 /* COMPOSANTS */
+
+.logo {
+  padding-left: 145px;
+}
+.header-nav {
+  display: flex;
+  text-align: center;
+  padding-left: 145px;
+}
 
 .login {
   background-color: var(--color-white);
   color: var(--color-primary);
+  padding-left: 145px;
 }
 
 .login .sing-up {
   color: var(--color-white);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-login);
   text-align: center;
   border: 0;
   line-height: 24px;
   background-color: var(--color-primary);
   padding: 10px 20px;
+}
+
+.card-title {
+  font-weight: var(--font-weight-card);
+}
+
+.footer-button {
+  background-color: var(--color-silver);
+}
+
+.footer-copyright {
+  background-color: var(--color-black);
+  justify-content: center;
+  text-align: center;
+  padding: 42px;
+  gap: 125px;
 }
