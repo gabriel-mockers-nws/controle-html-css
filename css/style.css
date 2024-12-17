@@ -57,7 +57,7 @@
 }
 
 /* RESET */
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -66,7 +66,7 @@
 *:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 4px;
-}
+} */
 
 /* Supprimez toutes les animations et transitions pour les personnes qui préfèrent ne pas les voir */
 /* @media (prefers-reduced-motion: reduce) {
@@ -134,7 +134,7 @@ p + p {
 
 nav a:hover {
   color: var(--color-primary);
-  transition: 1200ms;
+  transition: 1000ms;
 }
 
 /* header */
@@ -157,7 +157,6 @@ button {
   line-height: 24px;
   background-color: var(--color-primary);
   padding: 14px 32px;
-  font-weight: var(--font-weight-button);
 }
 
 /*footer */
@@ -216,41 +215,55 @@ a {
 .header-nav {
   justify-self: center;
   padding-top: 30px;
+  padding-bottom: 30px;
   gap: 50px;
 }
 
 .header-nav ul {
   display: flex;
   align-items: center;
+  width: 36.75rem;
+  height: 1.5rem;
+  gap: var(--spacing-2xl);
+  top: 1.875rem;
+  left: 25.281rem;
 }
 
 .header-nav li {
   list-style: none;
 }
 
+.logins {
+  display: flex;
+  padding: 22px 121.51px 22px 145px;
+  height: 40px;
+  width: 91px;
+  gap: 14px;
+  align-items: center;
+  line-height: 20px;
+}
+
 .login {
   background-color: var(--color-silver);
   color: var(--color-primary);
   padding: 10px 20px;
+  line-height: 20px;
+  border-radius: var(--radius-logins);
+  width: 77px;
+  height: 40px;
+  font-size: var(--font-size-base);
+  justify-content: center;
 }
 
 .sing-up {
   padding: 10px 20px;
-}
-
-.logins {
-  display: flex;
-  color: var(--color-white);
   border-radius: var(--radius-logins);
-  border: 0;
   line-height: 20px;
-  height: 40px;
   width: 91px;
-  background-color: var(--color-primary);
-  background-color: var(--color-white);
-  color: var(--color-primary);
-  gap: 14px;
-  text-align: center;
+  height: 40px;
+  font-size: var(--font-size-base);
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .card-title {
