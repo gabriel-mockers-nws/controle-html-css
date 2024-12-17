@@ -286,15 +286,26 @@ a {
   gap: 10px;
 }
 
+/*hero section */
+.pc-content {
+  display: flex;
+  background-color: papayawhip; /*temporaire*/
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.title-button {
+}
+
 /*cards*/
+
+.card-container {
+  text-align: center;
+}
 
 .card-title {
   font-weight: var(--font-weight-card);
-}
-
-.container-wide {
-  display: flex;
-  flex-direction: row;
+  text-align: center;
 }
 
 /* footer*/
@@ -314,12 +325,6 @@ a {
 .footer-copyright p {
   gap: 40px;
   color: var(--color-silver);
-}
-
-.pc-content {
-  display: flex;
-  background-color: papayawhip; /*temporaire*/
-  width: 100vw;
 }
 
 .section-mobile {
