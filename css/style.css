@@ -18,10 +18,10 @@
   --font-family-base: "inter", sans-serif;
 
   /* font size */
-  --font-size-base: clamp(0.75rem, 0.875rem + 0.1vw, 1.125rem);
-  --font-size-lg: clamp(1.5rem, 1.75rem + 0.15vw, 2rem);
-  --font-size-xl: clamp(1.75rem, 2.25rem + 0.2vw, 2.75rem);
-  --font-size-2xl: clamp(3rem, 4rem + 0.25vw, 5rem);
+  --font-size-base: clamp(0.75rem, 0.875rem + 0.1vw, 1.125rem); /*14px*/
+  --font-size-lg: clamp(1.5rem, 1.75rem + 0.15vw, 2rem); /*28 px*/
+  --font-size-xl: clamp(1.75rem, 2.25rem + 0.2vw, 2.75rem); /*36 px*/
+  --font-size-2xl: clamp(3rem, 4rem + 0.25vw, 5rem); /*64px*/
 
   /* Font weight */
   --font-weight-normal: 400;
@@ -291,10 +291,22 @@ a {
   display: flex;
   background-color: papayawhip; /*temporaire*/
   width: 100vw;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 1441px;
+  height: 599px;
+  padding: 96px 144px 96px 144px;
+  gap: 104px;
+  align-items: center;
 }
 
-.title-button {
+.title-button h1 {
+  white-space: nowrap;
+}
+
+.title-image {
+  width: 391px;
+  height: 407px;
+  justify-content: center;
 }
 
 /*cards*/
