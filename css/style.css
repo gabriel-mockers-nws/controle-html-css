@@ -115,6 +115,7 @@ h4 {
 
 h1 {
   font-size: var(--font-size-2xl);
+  line-height: var(--lineheight-main-heading);
 }
 
 h1 span {
