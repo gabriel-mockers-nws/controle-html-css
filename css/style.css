@@ -95,6 +95,13 @@ body {
   background-color: var(--color-white);
 }
 
+main {
+  width: 1441px;
+  height: 2.011.4px;
+  top: 84px;
+  gap: 42px;
+}
+
 /* Heding */
 h1,
 h2,
@@ -156,6 +163,7 @@ button {
   line-height: 24px;
   background-color: var(--color-primary);
   padding: 14px 32px;
+  font-weight: var(--font-weight-button);
 }
 
 /*footer */
@@ -205,11 +213,15 @@ a {
 
 /* sections */
 
-/* COMPOSANTS */
+/** COMPOSANTS */
+
+/** Header*/
 
 .logo {
   padding: 30px 145px 30px 105px;
 }
+
+/* nav */
 
 .header-nav {
   justify-self: center;
@@ -230,7 +242,14 @@ a {
 
 .header-nav li {
   list-style: none;
+  font-weight: var(--font-weight-normal);
 }
+
+.special-weight {
+  font-weight: var(--font-weight-button) !important;
+}
+
+/* login & sing-up buttons */
 
 .logins {
   display: flex;
@@ -267,9 +286,18 @@ a {
   gap: 10px;
 }
 
+/*cards*/
+
 .card-title {
   font-weight: var(--font-weight-card);
 }
+
+.container-wide {
+  display: flex;
+  flex-direction: row;
+}
+
+/* footer*/
 
 .footer-button {
   background-color: var(--color-silver);
@@ -305,3 +333,5 @@ a {
   background-color: paleturquoise; /*temp*/
   width: 100vw;
 }
+
+/**UTILITAIRES */
