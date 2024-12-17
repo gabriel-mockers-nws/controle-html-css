@@ -103,7 +103,7 @@ h4 {
   font-family: var(--font-family-heading);
   color: var(--color-dark-grey);
   line-height: var(--line-height-heading);
-  /* text-wrap: balance; */
+  text-wrap: balance;
 }
 
 h1 {
@@ -141,8 +141,7 @@ nav a:hover {
 header {
   /* position: fixed; */
   display: flex;
-  /* background-color: var(--color-silver); */
-  background-color: peru; /*temp*/
+  background-color: var(--color-silver);
   align-items: center;
   width: 90.063rem;
   height: 5.25rem;
