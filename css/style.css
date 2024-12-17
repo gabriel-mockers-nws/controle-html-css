@@ -44,6 +44,7 @@
   --spacing-xl: 3rem;
   --spacing-2xl: 3.125rem;
   --spacing-3xl: 4rem;
+  --spacing-big: 6.5rem;
 
   /* Radius */
   --radius-logins: 0.375rem;
@@ -68,21 +69,24 @@
 }
 
 /* Supprimez toutes les animations et transitions pour les personnes qui préfèrent ne pas les voir */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 /** BASES */
 html,
 body {
   margin: 0;
   padding: 0;
+  width: 1440px;
+  height: 2691px;
 }
+
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
@@ -99,7 +103,7 @@ h4 {
   font-family: var(--font-family-heading);
   color: var(--color-dark-grey);
   line-height: var(--line-height-heading);
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 h1 {
@@ -145,12 +149,24 @@ svg {
 /* Navigation */
 
 nav a {
-  padding: var(--spacing-xs) var(--spacing-md);
+  justify-content: space-between;
   text-decoration: none;
+  padding: var(--spacing-2xl);
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: var(--color-primary);
+  transition: 1200ms;
+}
+
+/* header */
+header {
+  display: flex;
+  gap: 145px;
+  background-color: var(--color-silver);
+  justify-content: space-evenly;
+  padding: 22px 105px;
+  align-items: center;
 }
 
 /* buttons */
@@ -165,14 +181,7 @@ button {
   font-weight: var(--font-weight-button);
 }
 
-header {
-  display: flex;
-  gap: 145px;
-  background-color: var(--color-silver);
-  justify-content: space-evenly;
-  padding: 22px 105px;
-}
-
+/*footer */
 footer {
   margin-inline: auto;
   background-color: blue;
@@ -204,22 +213,6 @@ footer {
 }
 
 /* Container */
-.container,
-.container-wide {
-  margin-inline: auto;
-}
-.container {
-  max-width: var(--container-default);
-}
-.container-wide {
-  max-width: var(--container-wide);
-}
-
-/* Sections */
-.section {
-  padding: clamp(var(--spacing-xl), 0.0795rem + 4.5455vw, var(--spacing-2xl))
-    var(--spacing-lg);
-}
 
 /* COMPOSANTS */
 
@@ -255,7 +248,6 @@ footer {
   background-color: var(--color-white);
   color: var(--color-primary);
   gap: 14px;
-
   text-align: center;
 }
 
@@ -278,4 +270,10 @@ footer {
 .footer-copyright p {
   gap: 40px;
   color: var(--color-silver);
+}
+
+.pc-content {
+  display: flex;
+  background-color: papayawhip; /*temporaire*/
+  width: 100vw;
 }
