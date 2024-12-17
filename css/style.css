@@ -252,6 +252,7 @@ a {
   height: 40px;
   font-size: var(--font-size-base);
   justify-content: center;
+  gap: 10px;
 }
 
 .sing-up {
@@ -263,6 +264,7 @@ a {
   font-size: var(--font-size-base);
   justify-content: center;
   white-space: nowrap;
+  gap: 10px;
 }
 
 .card-title {
