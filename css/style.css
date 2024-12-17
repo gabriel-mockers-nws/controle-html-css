@@ -135,7 +135,7 @@ a {
 }
 
 /* Images */
-img {
+/* img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
@@ -144,7 +144,7 @@ img {
 svg {
   display: block;
   fill: currentColor;
-}
+} */
 
 /* Navigation */
 
@@ -213,6 +213,7 @@ footer {
 }
 
 /* Container */
+/* sections */
 
 /* COMPOSANTS */
 
