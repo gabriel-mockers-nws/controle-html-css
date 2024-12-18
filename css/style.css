@@ -134,6 +134,7 @@ h3 {
 p + p {
   margin-top: var(--spacing-md);
   font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
 }
 
 /* Images */
@@ -290,7 +291,8 @@ a {
 /*hero section */
 .pc-content {
   display: flex;
-  background-color: papayawhip; /*temporaire*/
+  /* background-color: papayawhip;*/ /*temporaire*/
+  background-color: var(--color-silver);
   width: 100vw;
   justify-content: center;
   width: 1441px;
@@ -301,12 +303,20 @@ a {
 }
 
 .title-button h1 {
-  white-space: nowrap;
+  margin: 0;
 }
 
+.title-article p {
+  margin-top: 16px;
+}
 .title-image {
   width: 391px;
   height: 407px;
+}
+
+.register {
+  margin-top: 32px;
+  padding: 14px 32px 14px 32px;
 }
 
 /*cards*/
