@@ -165,6 +165,7 @@ button {
   line-height: 24px;
   background-color: var(--color-primary);
   padding: 14px 32px;
+  gap: 10px;
   font-weight: var(--font-weight-button);
 }
 
@@ -304,6 +305,7 @@ a {
 
 .title-button h1 {
   margin: 0;
+  white-space: nowrap;
 }
 
 .title-article p {
@@ -315,11 +317,20 @@ a {
 }
 
 .register {
-  margin-top: 32px;
+  gap: 10px;
   padding: 14px 32px 14px 32px;
 }
 
 /*cards*/
+
+.card {
+  background-color: pink; /*temporary*/
+  text-align: center;
+  border-radius: var(--radius-card);
+  padding: 24px 32px;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+}
 
 .card-container {
   text-align: center;
@@ -328,6 +339,23 @@ a {
 .card-title {
   font-weight: var(--font-weight-card);
   text-align: center;
+}
+
+/* article 1 */
+.section-mobile {
+  display: flex;
+  background-color: palevioletred; /*temp*/
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+/* article 2 */
+.section-lock {
+  display: flex;
+  background-color: paleturquoise; /*temp*/
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 
 /* footer*/
@@ -347,18 +375,6 @@ a {
 .footer-copyright p {
   gap: 40px;
   color: var(--color-silver);
-}
-
-.section-mobile {
-  display: flex;
-  background-color: palevioletred; /*temp*/
-  width: 100vw;
-}
-
-.section-lock {
-  display: flex;
-  background-color: paleturquoise; /*temp*/
-  width: 100vw;
 }
 
 /**UTILITAIRES */
