@@ -361,7 +361,8 @@ a {
 /* footer*/
 
 .footer-button {
-  background-color: var(--color-silver);
+  /* background-color: var(--color-silver); */
+  background-color: blue;
 }
 
 .footer-copyright {
