@@ -171,7 +171,12 @@ button {
 
 /*footer */
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
   margin-inline: auto;
+  width: 1440px;
+  height: 554px;
   background-color: blue;
 }
 
@@ -214,7 +219,13 @@ a {
 
 /* Container */
 
-/* sections */
+/* articles */
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding-top: 42px;
+  gap: 48px;
+}
 
 /** COMPOSANTS */
 
@@ -290,6 +301,7 @@ a {
 }
 
 /*hero section */
+
 .pc-content {
   display: flex;
   /* background-color: papayawhip;*/ /*temporaire*/
@@ -340,6 +352,8 @@ a {
   padding-left: 9rem;
   padding-right: 9rem;
   justify-content: space-between;
+  width: 1440px;
+  height: 280px;
 }
 
 .card {
@@ -387,9 +401,14 @@ a {
 }
 
 /* article 1 */
+.mobile {
+  display: flex;
+  justify-content: center;
+}
+
 .section-mobile {
   display: flex;
-  background-color: palevioletred; /*temp*/
+  background-color: var(--color-white);
   width: 100vw;
   align-items: center;
   justify-content: center;
@@ -398,8 +417,18 @@ a {
 .mobile-content {
   width: 601px;
   height: 268px;
+  margin-right: 144px;
 }
+
+.mobile-image {
+  width: 442px;
+  height: 433px;
+  margin-left: 144px;
+  margin-right: 49px;
+}
+
 /* article 2 */
+
 .section-lock {
   display: flex;
   background-color: paleturquoise; /*temp*/
