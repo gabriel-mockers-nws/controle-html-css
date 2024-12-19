@@ -57,12 +57,12 @@
 }
 
 /* RESET */
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/*
 *:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 4px;
@@ -323,6 +323,15 @@ a {
 
 /*cards*/
 
+.container-title {
+  margin-bottom: 4px;
+}
+
+.text-center {
+  padding: 8px;
+  margin-top: 4px;
+}
+
 .cards {
   display: flex;
   /* flex-wrap: wrap; */
@@ -334,21 +343,38 @@ a {
 }
 
 .card {
-  background-color: pink; /*temporary*/
+  background-color: var(--color-white);
+  /* background-color: pink; temporary */
   text-align: center;
   border-radius: var(--radius-card);
-  padding: 24px 32px;
-  gap: 8px;
+  padding: 24px 32px 24px 32px;
   box-shadow: var(--shadow-md);
+  width: 299px;
+  height: 260px;
+}
+
+.card-special {
 }
 
 .card-container {
   text-align: center;
 }
 
+.card-image {
+  width: 65px;
+  height: 56px;
+}
+
 .card-title {
   font-weight: var(--font-weight-card);
-  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.card-article {
+  line-height: var(--line-height-base);
+  margin: 0;
+  margin-top: 8px;
 }
 
 /* article 1 */
