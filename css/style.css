@@ -148,7 +148,7 @@ nav a:hover {
 
 /* header */
 header {
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   background-color: var(--color-silver);
   align-items: center;
@@ -322,6 +322,16 @@ a {
 }
 
 /*cards*/
+
+.cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 127.5px;
+  /* padding: 127.5px; */
+  padding-left: 9rem;
+  padding-right: 9rem;
+  justify-content: space-between;
+}
 
 .card {
   background-color: pink; /*temporary*/
