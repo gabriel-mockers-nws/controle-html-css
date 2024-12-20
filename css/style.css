@@ -10,6 +10,12 @@
   --color-black-nav: #18191f;
   --color-primary: #4caf4f;
 
+  /* dark-mode colors */
+  --dark-mode-primary: #4caf4f;
+  --dark-mode-black: #263238;
+  --dark-mode-Lgrey: #89939e;
+  --dark-mode-Dgrey: #4d4d4d;
+
   /* Shadow */
   --shadow-md: 0 2px 4px 0 #abbed1;
 
@@ -475,4 +481,50 @@ a {
 /**UTILITAIRES */
 .gap-lg {
   gap: var(--spacing-lg);
+}
+
+/* DARK-MODE */
+.dark-mode-switch {
+  display: flex;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-logins);
+  width: 35px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  left: 140px;
+  transition: background-color 0.3s ease;
+}
+
+.switch-circle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: var(--radius-logins);
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  transition: left 0.3s ease;
+}
+
+body.dark-mode .switch-circle {
+  left: 20px;
+  background-color: white;
+}
+
+body.dark-mode header {
+  background-color: var(--dark-mode-Dgrey);
+}
+
+body.dark-mode .header-nav a {
+  color: var(--color-silver);
+}
+
+body.dark-mode h1 {
+  color: var(--color-silver);
+}
+
+body.dark-mode .content {
+  background-color: var(--dark-mode-Dgrey);
 }
