@@ -495,7 +495,7 @@ a {
   position: relative;
   cursor: pointer;
   padding: 5px;
-  left: 140px;
+  left: 125px;
   transition: background-color 0.3s ease;
 }
 
@@ -539,10 +539,10 @@ body.dark-mode h1 {
   color: var(--dark-mode-grey-blue);
 }
 body.dark-mode h2 {
-  color: var(--dark-mode-grey-blue);
+  color: var(--dark-mode-black);
 }
 body.dark-mode h3 {
-  color: var(--dark-mode-grey-blue);
+  color: var(--dark-mode-black);
 }
 
 body.dark-mode p {
