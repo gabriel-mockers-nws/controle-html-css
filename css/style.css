@@ -62,21 +62,6 @@
 *::after {
   box-sizing: border-box;
 }
-/*
-*:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 4px;
-} */
-
-/* Supprimez toutes les animations et transitions pour les personnes qui préfèrent ne pas les voir */
-/* @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-} */
 
 /** BASES */
 html,
@@ -137,8 +122,6 @@ p + p {
   font-weight: var(--font-weight-normal);
 }
 
-/* Images */
-
 /* Navigation */
 
 nav a:hover {
@@ -175,8 +158,6 @@ footer {
   flex-direction: column;
   padding-top: 42px;
   margin-inline: auto;
-  /* width: 1440px;
-  height: 554px; */
   background-color: var(--color-white);
 }
 
@@ -343,6 +324,8 @@ a {
   justify-content: space-between;
   width: 1440px;
   height: 280px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .card {
