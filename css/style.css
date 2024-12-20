@@ -47,9 +47,9 @@
   --spacing-big: 6.5rem;
 
   /* Radius */
-  --radius-logins: 0.375rem;
-  --radius-base: 0.25rem;
-  --radius-card: 0.5rem;
+  --radius-logins: 0.375rem; /*6px*/
+  --radius-base: 0.25rem; /*4px*/
+  --radius-card: 0.5rem; /*8px*/
 
   /* Container */
   --container-default: 920px;
@@ -421,6 +421,11 @@ a {
   margin-right: 144px;
 }
 
+.mobile-content h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .mobile-image {
   width: 442px;
   height: 433px;
@@ -451,23 +456,25 @@ a {
 
 .lock-content h2 {
   white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* footer*/
 .footer-box-grey {
   display: flex;
   flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0;
   gap: 32px;
   width: 1200px;
   height: 364px;
-  /* text-align: center; */
-  border-radius: var(--radius-base);
-  /* justify-content: center; */
+  border-radius: var(--radius-card);
   align-items: center;
   background-color: var(--color-silver);
   margin-left: 120px;
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 32px 366.5px 64px 366.5px;
 }
 
 .footer-title {
@@ -481,7 +488,7 @@ a {
 }
 
 .footer-button {
-  padding-top: 32px;
+  width: 154px;
 }
 
 .footer-copyright {
@@ -491,6 +498,7 @@ a {
   text-align: center;
   padding: 42px;
   margin-top: 42px;
+  gap: 8px;
 }
 
 .footer-copyright p {
